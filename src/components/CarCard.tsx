@@ -1,6 +1,7 @@
 import { Car } from "@/types/car.interface"
 import Image from "next/image"
 import Link from "next/link"
+import ChevronSmall from "../../public/images/chevron-small.svg"
 
 interface CardProps {
   car: Car
@@ -14,15 +15,39 @@ export default function CarCard({ car }: CardProps) {
         <span className="font-bold text-zinc-950">{car.modelName}</span>
         <span className="font-extralight text-zinc-400">{car.modelType}</span>
       </div>
-      <Image src={car.imageUrl} alt={car.modelName} width="300" height="250" />
+      <Image
+        src={car.imageUrl}
+        alt={car.modelName}
+        width={384}
+        height={288}
+        priority
+      />
       <div className="w-full flex items-center justify-center gap-5 mt-4">
-        <Link className="flex uppercase text-blue-500 font-semibold text-xs gap-1" href="https://www.volvocars.com/">
+        <Link
+          className="flex uppercase text-blue-600 font-semibold text-xs gap-1"
+          href="https://www.volvocars.com/"
+        >
           <span>Learn</span>
-          <Image src={"../../images/chevron-small.svg"} alt="right arrow" width={12} height={12} />
+          <Image
+            src={ChevronSmall}
+            alt="right arrow" 
+            width={12} 
+            height={12}
+            style={{ width: 12, height: 12 }}
+          />
         </Link>
-        <Link className="flex uppercase text-blue-500 font-semibold text-xs gap-1" href="https://www.volvocars.com/">
+        <Link
+          className="flex uppercase text-blue-600 font-semibold text-xs gap-1"
+          href="https://www.volvocars.com/"
+        >
           <span>Shop</span>
-          <Image src={"../../images/chevron-small.svg"} alt="right arrow" width={12} height={12} />
+          <Image
+            src={ChevronSmall}
+            alt="right arrow"
+            width={12}
+            height={12} 
+            style={{ width: 12, height: 12 }}
+          />
         </Link>
       </div>
     </div>

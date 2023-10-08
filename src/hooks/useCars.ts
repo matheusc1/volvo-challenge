@@ -1,13 +1,14 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Car } from "../types/car.interface";
-import getDataFromFile from "../../public/api/cars";
 
 export function useCars() {
   const [cars, setCars] = useState<Car[]>([]);
 
   useEffect(() => {
-    setCars(getDataFromFile())
+    axios.get("http://localhost:3000/api").then(res => {
+      setCars(res.data)
+    })
   }, [])
 
   return {
