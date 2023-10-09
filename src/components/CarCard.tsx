@@ -11,8 +11,8 @@ export default function CarCard({ car }: CardProps) {
   return (
     <div className="flex flex-col items-start justify-center min-w-[18.75rem]">
       <p className="font-mono text-sm font-semibold text-zinc-400 uppercase">{car.bodyType}</p>
-      <div className="flex flex-row gap-1.5">
-        <span className="font-bold text-zinc-950">{car.modelName}</span>
+      <div className="flex flex-row gap-1.5 mb-3 items-center justify-center">
+        <span className="font-bold text-sm text-zinc-950">{car.modelName}</span>
         <span className="font-extralight text-zinc-400">{car.modelType}</span>
       </div>
       <Image
@@ -22,9 +22,9 @@ export default function CarCard({ car }: CardProps) {
         height={288}
         priority
       />
-      <div className="w-full flex items-center justify-center gap-5 mt-4">
+      <div className="w-full flex justify-center gap-5 mt-4">
         <Link
-          className="flex uppercase text-blue-600 font-semibold text-xs gap-1"
+          className="flex items-center justify-center uppercase text-blue-600 font-semibold text-xs gap-1 hover:underline"
           href="https://www.volvocars.com/"
         >
           <span>Learn</span>
@@ -37,7 +37,7 @@ export default function CarCard({ car }: CardProps) {
           />
         </Link>
         <Link
-          className="flex uppercase text-blue-600 font-semibold text-xs gap-1"
+          className="flex items-center justify-center uppercase text-blue-600 font-semibold text-xs gap-1 hover:underline"
           href="https://www.volvocars.com/"
         >
           <span>Shop</span>

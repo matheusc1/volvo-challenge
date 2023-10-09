@@ -16,13 +16,13 @@ export default function Home() {
         <Image
           src={ChevronCircled}
           alt="left arrow"
-          className="cursor-pointer rotate-180"
+          className="cursor-pointer rotate-180 hover:scale-105 transform transition-transform"
           priority
         />
         <Image
           src={ChevronCircled}
           alt="right arrow"
-          className="cursor-pointer"
+          className="cursor-pointer hover:scale-105 transform transition-transform"
           priority
         />
       </div>
