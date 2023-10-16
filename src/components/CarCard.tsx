@@ -24,7 +24,7 @@ export default function CarCard({ car }: CardProps) {
       />
       <div className="w-full flex justify-center gap-5 mt-4">
         <Link
-          className="flex items-center justify-center uppercase text-blue-600 font-semibold text-xs gap-1 hover:underline"
+          className="flex items-center justify-center uppercase tracking-wider text-blue-600 font-semibold text-xs gap-1 hover:underline"
           href="https://www.volvocars.com/"
         >
           <span>Learn</span>
@@ -32,12 +32,12 @@ export default function CarCard({ car }: CardProps) {
             src={ChevronSmall}
             alt="right arrow" 
             width={12} 
-            height={12}
+            height={16}
             style={{ width: 12, height: 12 }}
           />
         </Link>
         <Link
-          className="flex items-center justify-center uppercase text-blue-600 font-semibold text-xs gap-1 hover:underline"
+          className="flex items-center justify-center uppercase tracking-wider text-blue-600 font-semibold text-xs gap-1 hover:underline"
           href="https://www.volvocars.com/"
         >
           <span>Shop</span>
