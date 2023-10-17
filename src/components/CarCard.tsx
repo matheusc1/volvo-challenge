@@ -32,7 +32,7 @@ export default function CarCard({ car }: CardProps) {
             src={ChevronSmall}
             alt="right arrow" 
             width={12} 
-            height={16}
+            height={12}
             style={{ width: 12, height: 12 }}
           />
         </Link>

@@ -8,7 +8,7 @@ interface PaginationArrowsProps {
 
 export default function PaginationArrow({ onClickLeft, onClickRight }: PaginationArrowsProps) {
   return (
-    <div className="flex justify-end pb-32 max-w-7xl w-full gap-1 items-center mt-10">
+    <div className="hidden sm:flex justify-end pb-32 max-w-7xl w-full gap-1 items-center mt-10 ">
       <button onClick={onClickLeft}>
         <Image
           src={ChevronCircled}
