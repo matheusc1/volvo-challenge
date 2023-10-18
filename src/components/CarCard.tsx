@@ -25,7 +25,7 @@ export default function CarCard({ car }: CardProps) {
       <div className="w-full flex justify-center gap-5 mt-4">
         <Link
           className="flex items-center justify-center uppercase tracking-wider text-blue-600 font-semibold text-xs gap-1 hover:underline"
-          href="https://www.volvocars.com/"
+          href={`/learn/${car.id}`}
         >
           <span>Learn</span>
           <Image
@@ -38,7 +38,7 @@ export default function CarCard({ car }: CardProps) {
         </Link>
         <Link
           className="flex items-center justify-center uppercase tracking-wider text-blue-600 font-semibold text-xs gap-1 hover:underline"
-          href="https://www.volvocars.com/"
+          href={`/shop/${car.id}`}
         >
           <span>Shop</span>
           <Image
