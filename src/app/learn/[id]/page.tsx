@@ -21,7 +21,7 @@ export default function LearnLayout({ params }: { params: { id: string } }) {
         <span>Back</span>
       </Link>
 
-      <section className="flex-col flex items-center justify-center mt-5">
+      <section className="ml-8 max-w-sm flex-col flex items-center justify-center mt-5 sm:ml-0 sm:max-w-full">
         <h1 className="text-2xl font-bold">{car?.modelName}</h1>
 
         <div className="sm:flex-row flex flex-col justify-center gap-28 items-center mt-8">
@@ -38,7 +38,7 @@ export default function LearnLayout({ params }: { params: { id: string } }) {
             />
           </div>
 
-          <div className="flex flex-col items-center justify-center gap-4">
+          <div className="mb-10 sm:mb-0 flex flex-col items-center justify-center gap-2 text-lg">
             <span className="text-lg">Description:</span>
             <p className="w-96">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptatem, optio molestiae nesciunt eaque, aliquam quaerat nam voluptates minus culpa itaque laudantium nihil. Iure laudantium numquam, nam temporibus impedit eum.

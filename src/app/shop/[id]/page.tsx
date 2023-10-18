@@ -21,7 +21,7 @@ export default function ShopLayout({ params }: { params: { id: string } }) {
         <span>Voltar</span>
       </Link>
 
-      <section className="flex-col flex items-center justify-center mt-5">
+      <section className="ml-8 max-w-sm flex-col flex items-center justify-center mt-5 sm:ml-0 sm:max-w-full">
         <h1 className="text-2xl font-bold">{car?.modelName}</h1>
 
         <div className="sm:flex-row flex flex-col justify-center gap-28 items-center mt-8">
@@ -38,7 +38,7 @@ export default function ShopLayout({ params }: { params: { id: string } }) {
             />
           </div>
 
-          <div className="flex flex-col items-center justify-center gap-2 text-lg">
+          <div className="mb-10 sm:mb-0 flex flex-col items-center justify-center gap-2 text-lg">
             <span>Starting at:</span>
             <span>$89,950</span>
             <button 
