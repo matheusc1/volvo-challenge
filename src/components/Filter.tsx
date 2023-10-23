@@ -11,8 +11,6 @@ export default function Filter() {
   const estate = cars.filter(car => car.bodyType === "estate")
   const sedan = cars.filter(car => car.bodyType === "sedan")
 
-  console.log(suv)
-
   return (
     <ul className="flex gap-6 mt-8">
       <li>
