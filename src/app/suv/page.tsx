@@ -42,7 +42,7 @@ export default function Suv() {
 
       <section
         id="card-list"
-        className="flex justify-start flex-row items-center gap-6 w-100 mt-8 overflow-hidden max-w-sm p-2
+        className="flex justify-start flex-row items-center gap-6 w-100 mt-8 overflow-hidden max-w-sm px-1
         sm:justify-start sm:max-w-7xl sm:ml-0"
       >
         {suv.map(car => <CarCard key={car.id} car={car} />)}
