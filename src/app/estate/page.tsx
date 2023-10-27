@@ -31,8 +31,8 @@ export default function Suv() {
 
       <section
         id="card-list"
-        className="flex justify-start flex-row items-center gap-6 w-100 mt-8 overflow-hidden max-w-sm p-2
-        sm:justify-start sm:max-w-7xl sm:ml-0"
+        className="px-3 flex justify-start flex-row items-center gap-6 w-100 mt-8 overflow-hidden max-w-sm 
+        sm:justify-start sm:max-w-7xl sm:ml-0 sm:px-1"
       >
         {estate.map(car => <CarCard key={car.id} car={car} />)}
       </section>
