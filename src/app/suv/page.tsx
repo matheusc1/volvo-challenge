@@ -9,20 +9,15 @@ export default function Suv() {
   const { cars } = useCars()
   const suv = cars.filter(car => car.bodyType === "suv")
   const [selected, setSelected] = useState(0)
-  const [clicked, setClicked] = useState(Number)
 
   function onClickMobile(index: number) {
     let cardList = document.getElementById("card-list");
     let card = cardList?.firstElementChild;
     let cardSize = (card?.clientWidth ?? 0) + 24;
-    let scrollPosition = cardList?.scrollLeft ?? 0;
 
-    if (clicked < index) cardList?.scrollTo({ left: scrollPosition + cardSize })
-    else if (clicked == index) cardList?.scrollTo({ left: scrollPosition })
-    else cardList?.scrollTo({ left: scrollPosition - cardSize })
+    cardList?.scrollTo({ left: index * cardSize })
   
     setSelected(index)
-    setClicked(index)
   }
 
   return (

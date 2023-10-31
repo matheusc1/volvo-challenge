@@ -9,7 +9,6 @@ import { useState } from "react"
 export default function Home() {
   const { cars } = useCars()
   const [selected, setSelected] = useState(0)
-  const [clicked, setClicked] = useState(Number)
 
   function onClickNavigate(left: boolean) {
     let cardList = document.getElementById("card-list");
@@ -25,14 +24,10 @@ export default function Home() {
     let cardList = document.getElementById("card-list");
     let card = cardList?.firstElementChild;
     let cardSize = (card?.clientWidth ?? 0) + 24;
-    let scrollPosition = cardList?.scrollLeft ?? 0;
 
-    if (clicked < index) cardList?.scrollTo({ left: scrollPosition + cardSize })
-    else if (clicked == index) cardList?.scrollTo({ left: scrollPosition })
-    else cardList?.scrollTo({ left: scrollPosition - cardSize })
+    cardList?.scrollTo({ left: index * cardSize })
   
     setSelected(index)
-    setClicked(index)
   }
   
   return (
